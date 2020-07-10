@@ -1,0 +1,4 @@
+framework module SharetraceSDK {
+  header "SharetraceSDK-Swift.h"
+  requires objc
+}
