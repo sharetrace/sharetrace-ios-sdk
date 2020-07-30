@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getParamsAction(_ sender: Any) {
-        Sharetrace.getInstallTrace (success: {[weak self] (traceData) in
+        Sharetrace.getInstallTrace ({[weak self] (traceData) in
             guard let self = self else {
                 return
             }
@@ -27,26 +27,29 @@ class ViewController: UIViewController {
                 return
             }
             print("code: \(code), message: \(message)")
-            self.showParams(nil)
+            self.showFailResult(code, msg: message)
         }
         
     }
     
     func showParams(_ appData: AppData?) {
+        var message = ""
         if let appData = appData {
-            let msg = "appData: \n \(appData.paramsData) \n \(appData.resumePage)"
-            let alertController = UIAlertController(title: "Success", message: msg, preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default)
-            alertController.addAction(action)
-            present(alertController, animated: true, completion: nil)
-        } else {
-            let alertController = UIAlertController(title: "Fail", message: "appData is nil", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default)
-            alertController.addAction(action)
-            present(alertController, animated: true, completion: nil)
+            message = "appData: \n \(appData.paramsData) \n \(appData.resumePage)"
         }
         
-        
+        let alertController = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(action)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func showFailResult(_ code: Int, msg: String) {
+        let message = "code: \(code), msg: \(msg)"
+        let alertController = UIAlertController(title: "Fail", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(action)
+        present(alertController, animated: true, completion: nil)
     }
     
 }

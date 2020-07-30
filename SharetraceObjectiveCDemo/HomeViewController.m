@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-#import <SharetraceSDK/SharetraceSDK-Swift.h>
+#import <SharetraceSDK/SharetraceSDK.h>
 
 @interface HomeViewController ()
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <SharetraceSDK/SharetraceSDK-Swift.h>
+#import <SharetraceSDK/SharetraceSDK.h>
 
 @interface AppDelegate ()
 

@@ -1,4 +1,6 @@
 framework module SharetraceSDK {
-  header "SharetraceSDK-Swift.h"
-  requires objc
+  umbrella header "SharetraceSDK.h"
+
+  export *
+  module * { export * }
 }
