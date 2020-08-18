@@ -19,10 +19,10 @@
 		058BF5002480F6CA00FDA2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058BF4FE2480F6CA00FDA2E2 /* LaunchScreen.storyboard */; };
 		058BF5032480F6CA00FDA2E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 058BF5022480F6CA00FDA2E2 /* main.m */; };
 		26783108F98B55DFB3665A50 /* Pods_SharetraceSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C769AFA7A38585A53A896BEF /* Pods_SharetraceSDKDemo.framework */; };
-		9FE6FBDB24D2E1D5002CEA94 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE6FBD924D2E1CD002CEA94 /* SharetraceSDK.framework */; };
-		9FE6FBDC24D2E1D5002CEA94 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE6FBD924D2E1CD002CEA94 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9FE6FBDE24D2E1DE002CEA94 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE6FBD924D2E1CD002CEA94 /* SharetraceSDK.framework */; };
-		9FE6FBDF24D2E1DE002CEA94 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE6FBD924D2E1CD002CEA94 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FB72F0D24EBC044005C43B6 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB72F0A24EBC03E005C43B6 /* SharetraceSDK.framework */; };
+		9FB72F0E24EBC044005C43B6 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB72F0A24EBC03E005C43B6 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FB72F0F24EBC049005C43B6 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB72F0A24EBC03E005C43B6 /* SharetraceSDK.framework */; };
+		9FB72F1024EBC049005C43B6 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB72F0A24EBC03E005C43B6 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB959E1BE368357607963104 /* Pods_SharetraceObjectiveCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BF516C2F5F0A798DCCDA2 /* Pods_SharetraceObjectiveCDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,18 +33,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9FE6FBDC24D2E1D5002CEA94 /* SharetraceSDK.framework in Embed Frameworks */,
+				9FB72F0E24EBC044005C43B6 /* SharetraceSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		058BF50B2480F79E00FDA2E2 /* Embed Frameworks */ = {
+		9FB72F0924EBBE81005C43B6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9FE6FBDF24D2E1DE002CEA94 /* SharetraceSDK.framework in Embed Frameworks */,
+				9FB72F1024EBC049005C43B6 /* SharetraceSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +73,7 @@
 		65D1105C7EFAA713F504A1AC /* Pods-SharetraceObjectiveCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceObjectiveCDemo.debug.xcconfig"; path = "Target Support Files/Pods-SharetraceObjectiveCDemo/Pods-SharetraceObjectiveCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6E8323893D9D58F8E73DAA0F /* Pods-SharetraceSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-SharetraceSDKDemo/Pods-SharetraceSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8DB3F8B92E348C00C3E1BEA9 /* Pods-SharetraceSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-SharetraceSDKDemo/Pods-SharetraceSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		9FE6FBD924D2E1CD002CEA94 /* SharetraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SharetraceSDK.framework; sourceTree = "<group>"; };
+		9FB72F0A24EBC03E005C43B6 /* SharetraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SharetraceSDK.framework; sourceTree = "<group>"; };
 		BB31AEF4F9A99DBC9AB84348 /* Pods-SharetraceObjectiveCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceObjectiveCDemo.release.xcconfig"; path = "Target Support Files/Pods-SharetraceObjectiveCDemo/Pods-SharetraceObjectiveCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C769AFA7A38585A53A896BEF /* Pods_SharetraceSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharetraceSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,7 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26783108F98B55DFB3665A50 /* Pods_SharetraceSDKDemo.framework in Frameworks */,
-				9FE6FBDB24D2E1D5002CEA94 /* SharetraceSDK.framework in Frameworks */,
+				9FB72F0D24EBC044005C43B6 /* SharetraceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB959E1BE368357607963104 /* Pods_SharetraceObjectiveCDemo.framework in Frameworks */,
-				9FE6FBDE24D2E1DE002CEA94 /* SharetraceSDK.framework in Frameworks */,
+				9FB72F0F24EBC049005C43B6 /* SharetraceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 		055D1764244E867B00C44DDA /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				9FE6FBD924D2E1CD002CEA94 /* SharetraceSDK.framework */,
+				9FB72F0A24EBC03E005C43B6 /* SharetraceSDK.framework */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -149,11 +149,11 @@
 				058BF4F12480F6C600FDA2E2 /* AppDelegate.m */,
 				058BF4F62480F6C600FDA2E2 /* HomeViewController.h */,
 				058BF4F72480F6C600FDA2E2 /* HomeViewController.m */,
-				058BF4F92480F6C600FDA2E2 /* Main.storyboard */,
 				058BF4FC2480F6CA00FDA2E2 /* Assets.xcassets */,
-				058BF4FE2480F6CA00FDA2E2 /* LaunchScreen.storyboard */,
 				058BF5012480F6CA00FDA2E2 /* Info.plist */,
+				058BF4FE2480F6CA00FDA2E2 /* LaunchScreen.storyboard */,
 				058BF5022480F6CA00FDA2E2 /* main.m */,
+				058BF4F92480F6C600FDA2E2 /* Main.storyboard */,
 			);
 			path = SharetraceObjectiveCDemo;
 			sourceTree = "<group>";
@@ -209,8 +209,8 @@
 				058BF4EA2480F6C600FDA2E2 /* Sources */,
 				058BF4EB2480F6C600FDA2E2 /* Frameworks */,
 				058BF4EC2480F6C600FDA2E2 /* Resources */,
-				058BF50B2480F79E00FDA2E2 /* Embed Frameworks */,
 				05A185FB248242F0008E285A /* ShellScript */,
+				9FB72F0924EBBE81005C43B6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -552,7 +552,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-fembed-bitcode";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.ShareTrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.Demo;
 				PRODUCT_NAME = SharetraceDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -578,7 +578,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_CFLAGS = "-fembed-bitcode";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.ShareTrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.Demo;
 				PRODUCT_NAME = SharetraceDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -594,6 +594,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
@@ -604,7 +605,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.ShareTrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -619,6 +620,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
@@ -629,7 +631,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.ShareTrace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sharetrace.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
