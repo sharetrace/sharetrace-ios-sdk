@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setUpWindow()
-        Sharetrace.start()
-        return true
+        Sharetrace.initWith(self)
+        return true 
     }
     
     func setUpWindow() {
@@ -26,8 +26,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
         window?.rootViewController = vc
     }
+}
 
-
+extension AppDelegate: SharetraceDelegate {
+    
+    func getWakeUpTrace(_ appData: AppData?) {
+        if let appData = appData {
+            showWakeResult(title: "getWakeUpTrace", msg: appData.paramsData)
+        } else {
+            showWakeResult(title: "getWakeUpTrace", msg: "Failed to getWakeUpTrace!")
+        }
+    }
+    
+    func showWakeResult(title: String, msg: String) {
+        let alertController = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default)
+        alertController.addAction(action)
+        self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
 }
 
 
