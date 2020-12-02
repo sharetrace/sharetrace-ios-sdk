@@ -23,14 +23,14 @@
 - (IBAction)getParamsAction:(id)sender {
     [Sharetrace getInstallTrace:^(AppData * _Nullable appdata) {
         NSLog(@"ShareTrace success: resumePage：%@; paramsData：%@", [appdata resumePage], [appdata paramsData]);
-        [self showAler:@"getInstallTrace Success" :[appdata paramsData]];
+        [self showAlert:@"getInstallTrace Success" :[appdata paramsData]];
     } :^(NSInteger code, NSString * _Nonnull message) {
         NSLog(@"ShareTrace fail: code：%ld; message：%@", code, message);
-        [self showAler:@"getInstallTrace Fail" :message];
+        [self showAlert:@"getInstallTrace Fail" :message];   
     }];
 }
 
-- (void) showAler:(NSString*)title :(NSString*)msg {
+- (void) showAlert:(NSString*)title :(NSString*)msg {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {

@@ -50,7 +50,7 @@
 * <key>com.sharetrace.APP_KEY</key>
 * @param delegate 实现SharetraceDelegate的对象实例
 */
-+ (void)initWithDelegate:(id<SharetraceDelegate> _Nonnull)delegate;
++ (void)initWithDelegate:(id<SharetraceDelegate> _Nullable)delegate;
 
 /**
 * 初始化Sharetrace SDK
@@ -58,7 +58,7 @@
 * <key>com.sharetrace.APP_KEY</key>
 * @param delegate 实现SharetraceDelegate的对象实例
 */
-+ (void)initWithDelegate:(id<SharetraceDelegate> _Nonnull)delegate appKey:(NSString * _Nonnull)appKey;
++ (void)initWithDelegate:(id<SharetraceDelegate> _Nullable)delegate appKey:(NSString * _Nonnull)appKey;
 
 /**
 * 获取由web传递过来的动态参数（如房间号、邀请码、渠道等）和相关信息
@@ -80,6 +80,12 @@
  * @return bool Sharetrace是否成功识别该URL
  */
 + (BOOL)handleUniversalLink:(NSUserActivity * _Nullable)userActivity;
+
+/**
+ * 注册SharetraceDelegate
+ * @param delegate 实现SharetraceDelegate的实例
+ */
++ (void)registerSharetraceDelegate: (id<SharetraceDelegate> _Nullable)delegate;
 
 @end
 

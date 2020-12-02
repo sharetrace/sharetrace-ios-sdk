@@ -15,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setUpWindow()
         Sharetrace.initWith(self)
-        return true 
+        setUpWindow()
+        return true
     }
     
     func setUpWindow() {
@@ -25,6 +25,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ViewController")
         window?.rootViewController = vc
+    }
+    
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        Sharetrace.handleSchemeLinkURL(url)
+        return true
+    }
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        Sharetrace.handleSchemeLinkURL(url)
+        return true
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        Sharetrace.handleUniversalLink(userActivity)
+        return true
     }
 }
 

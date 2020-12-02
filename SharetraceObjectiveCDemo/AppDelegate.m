@@ -45,14 +45,14 @@
     if (appData != nil) {
         NSString *info = [NSString stringWithFormat:@"appData: \n %@, \n%@, %@", appData.paramsData, appData.resumePage, appData.channel];
         NSLog(@"getWakeUpTrace Success, %@", info);
-        [self showAler:@"getWakeUpTrace Success" :info];
+        [self showAlert:@"getWakeUpTrace Success" :info];
     } else {
         NSLog(@"getWakeUpTrace nil");
-        [self showAler:@"getWakeUpTrace" :@"Fail"];
+        [self showAlert:@"getWakeUpTrace" :@"Fail"];
     }
 }
 
-- (void) showAler:(NSString*)title :(NSString*)msg {
+- (void) showAlert:(NSString*)title :(NSString*)msg {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
