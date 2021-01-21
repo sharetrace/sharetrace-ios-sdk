@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     func showParams(_ appData: AppData?) {
         var message = ""
         if let appData = appData {
-            message = "appData: \n \(appData.paramsData) \n \(appData.resumePage)"
+            message = "appData: \n \(appData.paramsData)"
         }
         
         let alertController = UIAlertController(title: "Success", message: message, preferredStyle: .alert)

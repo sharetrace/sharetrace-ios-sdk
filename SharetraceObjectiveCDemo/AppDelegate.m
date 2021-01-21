@@ -43,7 +43,7 @@
 
 - (void)getWakeUpTrace:(AppData * _Nullable)appData {
     if (appData != nil) {
-        NSString *info = [NSString stringWithFormat:@"appData: \n %@, \n%@, %@", appData.paramsData, appData.resumePage, appData.channel];
+        NSString *info = [NSString stringWithFormat:@"appData: \n %@, \n %@", appData.paramsData, appData.channel];
         NSLog(@"getWakeUpTrace Success, %@", info);
         [self showAlert:@"getWakeUpTrace Success" :info];
     } else {
@@ -53,7 +53,8 @@
 }
 
 - (void) showAlert:(NSString*)title :(NSString*)msg {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:msg preferredStyle:UIAlertControllerStyleAlert];
+    NSString *alertMsg = [NSString stringWithFormat:@"msg : %@", msg];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:alertMsg preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //button click event

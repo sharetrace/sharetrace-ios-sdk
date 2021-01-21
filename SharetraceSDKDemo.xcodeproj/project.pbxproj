@@ -19,21 +19,21 @@
 		058BF5002480F6CA00FDA2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058BF4FE2480F6CA00FDA2E2 /* LaunchScreen.storyboard */; };
 		058BF5032480F6CA00FDA2E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 058BF5022480F6CA00FDA2E2 /* main.m */; };
 		26783108F98B55DFB3665A50 /* Pods_SharetraceSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C769AFA7A38585A53A896BEF /* Pods_SharetraceSDKDemo.framework */; };
-		9F848A0525777C2F00804865 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F848A0225777C2800804865 /* SharetraceSDK.framework */; };
-		9F848A0625777C2F00804865 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F848A0225777C2800804865 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9F848A0725777C3300804865 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F848A0225777C2800804865 /* SharetraceSDK.framework */; };
-		9F848A0825777C3300804865 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F848A0225777C2800804865 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F40983E25B92AA600EA6A83 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40983B25B92A9100EA6A83 /* SharetraceSDK.framework */; };
+		9F40983F25B92AA600EA6A83 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40983B25B92A9100EA6A83 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F40984125B92AAA00EA6A83 /* SharetraceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40983B25B92A9100EA6A83 /* SharetraceSDK.framework */; };
+		9F40984225B92AAA00EA6A83 /* SharetraceSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40983B25B92A9100EA6A83 /* SharetraceSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB959E1BE368357607963104 /* Pods_SharetraceObjectiveCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188BF516C2F5F0A798DCCDA2 /* Pods_SharetraceObjectiveCDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		055D1769244E895200C44DDA /* Embed Frameworks */ = {
+		9F40984025B92AA600EA6A83 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F848A0825777C3300804865 /* SharetraceSDK.framework in Embed Frameworks */,
+				9F40983F25B92AA600EA6A83 /* SharetraceSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F848A0625777C2F00804865 /* SharetraceSDK.framework in Embed Frameworks */,
+				9F40984225B92AAA00EA6A83 /* SharetraceSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,9 +73,9 @@
 		65D1105C7EFAA713F504A1AC /* Pods-SharetraceObjectiveCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceObjectiveCDemo.debug.xcconfig"; path = "Target Support Files/Pods-SharetraceObjectiveCDemo/Pods-SharetraceObjectiveCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6E8323893D9D58F8E73DAA0F /* Pods-SharetraceSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-SharetraceSDKDemo/Pods-SharetraceSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8DB3F8B92E348C00C3E1BEA9 /* Pods-SharetraceSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-SharetraceSDKDemo/Pods-SharetraceSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F40983B25B92A9100EA6A83 /* SharetraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SharetraceSDK.framework; sourceTree = "<group>"; };
 		9F437AD9254955DC009A8B60 /* SharetraceObjectiveCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharetraceObjectiveCDemo.entitlements; sourceTree = "<group>"; };
 		9F437ADA254AFEBE009A8B60 /* SharetraceDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharetraceDemo.entitlements; sourceTree = "<group>"; };
-		9F848A0225777C2800804865 /* SharetraceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SharetraceSDK.framework; sourceTree = "<group>"; };
 		BB31AEF4F9A99DBC9AB84348 /* Pods-SharetraceObjectiveCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharetraceObjectiveCDemo.release.xcconfig"; path = "Target Support Files/Pods-SharetraceObjectiveCDemo/Pods-SharetraceObjectiveCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C769AFA7A38585A53A896BEF /* Pods_SharetraceSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharetraceSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26783108F98B55DFB3665A50 /* Pods_SharetraceSDKDemo.framework in Frameworks */,
-				9F848A0725777C3300804865 /* SharetraceSDK.framework in Frameworks */,
+				9F40983E25B92AA600EA6A83 /* SharetraceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB959E1BE368357607963104 /* Pods_SharetraceObjectiveCDemo.framework in Frameworks */,
-				9F848A0525777C2F00804865 /* SharetraceSDK.framework in Frameworks */,
+				9F40984125B92AAA00EA6A83 /* SharetraceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 		055D1764244E867B00C44DDA /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				9F848A0225777C2800804865 /* SharetraceSDK.framework */,
+				9F40983B25B92A9100EA6A83 /* SharetraceSDK.framework */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -193,8 +193,8 @@
 				055D1749244E84FF00C44DDA /* Sources */,
 				055D174A244E84FF00C44DDA /* Frameworks */,
 				055D174B244E84FF00C44DDA /* Resources */,
-				055D1769244E895200C44DDA /* Embed Frameworks */,
 				055D1770244E9A6600C44DDA /* ShellScript */,
+				9F40984025B92AA600EA6A83 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -562,6 +562,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -589,6 +590,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -616,6 +618,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -643,6 +646,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

@@ -11,7 +11,6 @@
 @interface AppData : NSObject
 
 @property(nonatomic, copy) NSString *paramsData;
-@property(nonatomic, copy) NSString *resumePage;
 @property(nonatomic, copy) NSString *channel;
 
 @end
