@@ -87,6 +87,13 @@
  */
 + (void)registerSharetraceDelegate: (id<SharetraceDelegate> _Nullable)delegate;
 
+/**
+ * 设置目标服务器的domain
+ * 注: 需要在init之前调用才能生效！
+ * @param domain 目标服务器的domain, 如: https://api.sharetrace.com
+ */
++ (void)setServerDomain:(NSString * _Nonnull)domain;
+
 @end
 
 
