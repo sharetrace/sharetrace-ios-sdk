@@ -25,19 +25,33 @@
 }
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-    [Sharetrace handleUniversalLink:userActivity];
+    
+    if ([Sharetrace handleUniversalLink:userActivity]) {
+        return YES;
+    }
+    
     return YES;
 }
 
-//iOS9以下
+//ios9以下 URI Scheme
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    [Sharetrace handleSchemeLinkURL:url];
+    
+    if ([Sharetrace handleSchemeLinkURL:url]) {
+        return YES;
+    }
+
+    //其他代码
     return YES;
 }
 
-//iOS9及以上
+//iOS9以上 URL Scheme
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(nonnull NSDictionary *)options {
-    [Sharetrace handleSchemeLinkURL:url];
+    
+    if ([Sharetrace handleSchemeLinkURL:url]) {
+        return YES;
+    }
+    
+    //其他代码
     return YES;
 }
 

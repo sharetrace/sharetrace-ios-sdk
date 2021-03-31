@@ -27,18 +27,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = vc
     }
     
+    //适用目前所有iOS版本
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
-        Sharetrace.handleSchemeLinkURL(url)
+        if (Sharetrace.handleSchemeLinkURL(url)) {
+            return true;
+        }
+        
+        // 其他处理
         return true
     }
     
+    //iOS9以上
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        Sharetrace.handleSchemeLinkURL(url)
+        if (Sharetrace.handleSchemeLinkURL(url)) {
+            return true;
+        }
+        
+        // 其他处理
         return true
     }
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        Sharetrace.handleUniversalLink(userActivity)
+        if (Sharetrace.handleUniversalLink(userActivity)) {
+            return true;
+        }
+        
+        // 其他处理
         return true
     }
 }

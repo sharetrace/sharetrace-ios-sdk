@@ -54,5 +54,7 @@
 	</array>
 	<key>com.sharetrace.APP_KEY</key>
 	<string>8a9392dc41de5dca</string>
+	<key>com.sharetrace.SERVER_DOMAIN</key>
+	<string>https://api.sharetrace.com</string>
 </dict>
 </plist>

@@ -88,8 +88,11 @@
 + (void)registerSharetraceDelegate: (id<SharetraceDelegate> _Nullable)delegate;
 
 /**
- * 设置目标服务器的domain
- * 注: 需要在init之前调用才能生效！
+ * 设置目标服务器的domain, 仅供私有化部署用户使用
+ * 注:
+ * 方法一: 如在代码中设置, 需要在init之前调用才能生效！
+ * 方法二: 调用该方法前，需在Info.plist文件中配置键值对
+ * <key>com.sharetrace.SERVER_DOMAIN</key>
  * @param domain 目标服务器的domain, 如: https://api.sharetrace.com
  */
 + (void)setServerDomain:(NSString * _Nonnull)domain;
