@@ -26,7 +26,7 @@
 
 /**
 * 获取当前SDK的版本号
-* @return NSString SDK版本号(2.3.2)
+* @return NSString SDK版本号(2.3.4)
 */
 + (NSString * _Nonnull)sdkVersion;
 
@@ -113,6 +113,33 @@
  * @return BOOL 是否首次请求
  */
 + (BOOL)isFirstOpen;
+
+/**
+ * 开启Debug模式
+ * 注：仅在开发阶段开启，开启后会记录更多调试日志
+ * @param debug 是否开启Debug模式，默认为 NO
+ */
++ (void)setDebug:(BOOL)debug;
+
+/**
+ * 写入日志
+ * @param log 日志信息
+ */
++ (void)appendLog:(NSString * _Nullable)log;
+
+/**
+ * 提取所有的调试日志
+ * @return NSString 调试日志
+ */
++ (NSString * _Nullable)dumpLog;
+
+/**
+ * 设置SDK不访问剪切板
+ * 注：
+ * 1. 默认情况下，SDK会访问剪切板，以获取剪切板中的动态参数
+ * 2. 需要initWithDelegate之前调用才能生效
+ */
++ (void)disableClipboard;
 
 @end
 

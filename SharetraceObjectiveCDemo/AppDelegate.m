@@ -16,6 +16,8 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 如需禁用SharetraceSDK访问系统剪贴板，若禁用会影响匹配成功率
+//    [Sharetrace disableClipboard];
     [Sharetrace initWithDelegate:self];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];

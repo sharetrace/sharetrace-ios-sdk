@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // 如需禁用SharetraceSDK访问系统剪贴板，若禁用会影响匹配成功率
+//        Sharetrace.disableClipboard()
         Sharetrace.initWith(self)
         setUpWindow()
         return true
