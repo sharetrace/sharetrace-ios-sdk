@@ -26,7 +26,7 @@
 
 /**
 * 获取当前SDK的版本号
-* @return NSString SDK版本号(2.3.4)
+* @return NSString SDK版本号(2.4.0)
 */
 + (NSString * _Nonnull)sdkVersion;
 
