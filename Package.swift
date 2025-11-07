@@ -17,7 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SharetraceSDK",
-            path: "lib/SharetraceSDK.xcframework"
+            url: "https://github.com/sharetrace/sharetrace-ios-sdk/releases/download/2.4.3/SharetraceSDK.xcframework.zip",
+            checksum: "582c7ca002be8d2381f20010990c3233a5eaf99cad68315c1af6d57bf67fe8b7"
         )
     ]
 )
